@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Blogs</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+    <div class="header">
+        <header class="header-content">
+            <!-- <img src="#actual-link-of-logo" alt="logoImage" class="logo-icon"> -->
+            <h2 class="name">Horizon Blogs</h2>
+        </header>
+        <button type="button" onclick="toggleForm()" class="btn-popup">Upload your own blog</button>
+    </div>
+
+    <hr>
+
+    <div id="wrapper">
+        <!-- blog elements will be added here -->
+        <div id="upload-box">
+            <span id="close-btn" onclick="toggleForm()">X</span>
+            <h2>Write your Blog</h2>
+            <form id="form-label">
+                <div class="input-box">
+    
+                    <input type="text" id="username" maxlength="20" required>
+                    <label id="bkl-1">USER-NAME</label>
+                </div>
+                <div class="input-box">
+    
+                    <input type="text" id="title" maxlength="30" required>
+                    <label id="bkl-2">TITLE</label>
+                </div>
+                <div class="input-box">
+    
+                    <textarea id="content" name="content" rows="10" cols="10" required></textarea>
+                    <label>BLOG</label>
+                </div>
+                <br><br><br><br>
+                <button type="submit" class="btn" id="upload onclick="uploadBlog()">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+
+
+    <div class="card">
+        <div class="user-name">
+            <span id="name">User Name : RAHUL SHARMA</span>
+        </div>
+
+        <div class="blog-title">
+            <span id="title">Title : My Experience in Photography</span>
+        </div>
+
+        <div class="blog">
+            <span id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sapiente, ex sed eaque,
+                distinctio hic, perspiciatis totam excepturi vero quis ipsam et impedit deserunt perferendis quo
+                accusantium! Rem, inventore possimus.</span>
+        </div>
+
+        <button id="report-button-1" class="report-button">Report</button>
+    </div>
+
+
+    </div>
+    <div class="card">
+        <div class="user-name">
+            <span id="name">User Name : RAHUL SHARMA</span>
+        </div>
+
+        <div class="blog-title">
+            <span id="title">Title : My Experience in Photography</span>
+        </div>
+
+        <div class="blog">
+            <span id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sapiente, ex sed eaque,
+                distinctio hic, perspiciatis totam excepturi vero quis ipsam et impedit deserunt perferendis quo
+                accusantium! Rem, inventore possimus.</span>
+        </div>
+        <button id="report-button-2" class="report-button">Report</button>
+    </div>
+    </div>
+    <div class="card">
+        <div class="user-name">
+            <span id="name">User Name : RAHUL SHARMA</span>
+        </div>
+
+        <div class="blog-title">
+            <span id="title">Title : My Experience in Photography</span>
+        </div>
+
+        <div class="blog">
+            <span id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam id tenetur
+                deserunt? Recusandae aliquid odit laudantium ullam nihil eaque sunt magnam commodi asperiores deleniti
+                in, doloribus quas, aut quos reprehenderit. Ea architecto hic dicta nemo voluptatem aut quis voluptates
+                ratione consectetur quasi, exercitationem mollitia earum voluptatum fugit inventore tempora beatae nihil
+                eligendi, accusamus dolores alias? Perspiciatis cupiditate quaerat iure temporibus tempore asperiores
+                qui! Porro non corporis velit aliquam quos repellendus, ad, vitae similique atque iure placeat
+                reiciendis, minus sequi sapiente! Necessitatibus facilis laboriosam, neque nemo suscipit illum vero
+                recusandae aliquid nisi fuga omnis nulla in exercitationem magni repellendus consequuntur.</span>
+        </div>
+        <button id="report-button-3" class="report-button">Report</button>
+    </div>
+    </div>
+    <div class="card">
+        <div class="user-name">
+            <span id="name">User Name : RAHUL SHARMA</span>
+        </div>
+
+        <div class="blog-title">
+            <span id="title">Title : My Experience in Photography</span>
+        </div>
+
+        <div class="blog">
+            <span id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sapiente, ex sed eaque,
+                distinctio hic, perspiciatis totam excepturi vero quis ipsam et impedit deserunt perferendis quo
+                accusantium! Rem, inventore possimus.</span>
+        </div>
+        <button id="report-button-4" class="report-button">Report</button>
+    </div>
+    </div>
+
+    <script src="/blog.js"></script>
+</body>
+
+</html>

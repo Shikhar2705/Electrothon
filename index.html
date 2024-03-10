@@ -1,39 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Métier Horizon</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Métier Horizon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class="Project">
-            <h1 id="site-name">Métier Horizon</h1>
-        </div>
+  <div class="header">
+    <header class="header-content">
+      <a href="#home" class="logo">
+
+        <!-- <img src="#actual-link-of-logo" alt="logoImage" class="logo-icon"> -->
+        <span class="logo-text">Métier Horizon</span>
+        <!-- <span class="logo-text">Gand me carrer</span> -->
+      </a>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#" class="nav-link">Roadmaps <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="eng.png">Engineering</a></li>
+              
+              <li><a href="arts.png" >Arts</a></li>
+              <li><a href="commerce.png" >12th Commerce</a></li>
+              <li><a href="12th.png" >12th Maths</a></li>
+              <li><a href="dance.png" >Dance Industry</a></li>
+              <li><a href="acting.png">Acting</a></li>
+              <li><a href="sports.png">Sports</a></li>
+              <li><a href="athletes.png">Athelete</a></li>
+              <li><a href="music.png" >Music Industry</a></li>
+            </ul>
+        </li>
+          <li><a href="#team-sec" class="nav-link">Our Team</a></li>
+          <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+          <li><a href="#parent-content" class="nav-link">About Us</a></li>
+          <li><a href="#footer-distributed" class="nav-link">Contact Us</a></li>
+        </ul>      
+      </nav>
+
     </header>
-    <nav class="navbar">
-        <ul class = "nav-list">
-            <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
-            <li><a href="#"><i class="fa-solid fa-users-line"></i>Our Team</a></li>
-            <li><a href="#"><i class="fa-brands fa-blogger"></i>Blog</a></li>
-            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 24 24">
-                <path d="M 4.0097656 3 C 2.9179106 3 2.0097656 3.9049841 2.0097656 4.9980469 L 2 23 L 6 19 L 20 19 C 21.093063 19 22 18.093063 22 17 L 22 5 C 22 3.9069372 21.093063 3 20 3 L 4.0097656 3 z M 4.0097656 5 L 20 5 L 20 17 L 5.171875 17 L 4.0039062 18.167969 L 4.0097656 5 z M 11 7 L 11 9 L 13 9 L 13 7 L 11 7 z M 11 11 L 11 15 L 13 15 L 13 11 L 11 11 z"></path>
-                </svg>About Us</a></li>
-            <li><a href="#"><i class="fa-solid fa-phone"></i>Contact Us</a></li>
-        </ul>
-    </nav>
-    <footer class="details">
-        <div class="logo-btn">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-github" style="color: #000000;"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    <hr size="2" width="100%" color="purple">
+  </div>
+  <br>
+
+  <!-- home page  -->
+  <div id="home">
+    <div class="card-container">
+      <div class="card">
+        <span id="vision">Our Vision to Success</span>
+        <p id="para">Transform your life with the right path.</p>
+      </div>
+      <div class="card">
+
+        <p id="para2">Enter your current educational status / Enter your interests here.</p>
+      </div>
+    </div>
+    <!-- SEARCH-BAR -->
+    <div class="container">
+      <input type="text" id="search-box" placeholder="Search..." data-search>
+      <div class="search" data-user-cards-container></div>
+      <!-- <template data-user-template>
+        <div class="card">
+          <span>User Name : <span class="user-name-text"></span>
         </div>
-    </footer>
+      </template> -->
+    </div>
+  </div>
+
+  <div id="team-sec">
+    <h1 id="team-head">Meet Our Team</h1>
+    <div id="team-container">
+
+      <!-- team member cards go here -->
+    </div>
+  </div>
+  <!-- about us -->
+
+  <main>
+    <div id="parent-content">
+      <h2 id="heading">ABOUT US</h2>
+      <div class="child-content">
+        <p id="para3">Welcome to Metier Horizon your go-to resource for navigating the exciting journey of career
+          exploration and educational choices after completing the 9th standard. We understand that choosing the right
+          path after this crucial stage can be both thrilling and challenging. That's where we come in - to guide and
+          inspire you on your educational and professional voyage.</p> <br> <br>
+
+        <span id="para4">OUR MISSION</span> <br> <br> <br>
+        <p id="para5">
+          At Metier Horizon, our mission is to empower students to make informed decisions about their future. We
+          believe that every individual has unique talents and interests, and our goal is to help you discover and
+          nurture these qualities as you embark on your educational journey.</p>
+      </div>
+    </div>
+    <!-- faq -->
+
+  </main>
+  <div id="faq">
+    <h2 class="faq-title">FREQUENTLY ASKED QUESTIONS
+      <hr size="2" width="100%" color="black">
+    </h2>
+
+    <div class="faq-question">
+      <button class="faq-toggle">How can I advance in my career?</button>
+      <div class="faq-answer">
+        Advancing in your career often involves acquiring new skills, gaining relevant experience, and building a professional network.
+      </div>
+    </div>
+    <div class="faq-question">
+      <button class="faq-toggle">What are the current trends and opportunities in [industry/field]?</button>
+      <div class="faq-answer">
+        Stay informed about current trends and opportunities in your industry or field by regularly reading industry publications, attending conferences and networking events, and connecting with professionals in your field.
+      </div>
+    </div>
+    <div class="faq-question">
+      <button class="faq-toggle">How can I transition into a new career field?</button>
+      <div class="faq-answer">
+        Transitioning into a new career field may require additional education, training, or experience. Consider taking courses, participating in internships or apprenticeships, and networking with professionals.
+      </div>
+    </div>
+    <div class="faq-question">
+      <button class="faq-toggle">What should I do if I feel stuck in my career?</button>
+      <div class="faq-answer">
+        If you feel stuck in your career, take time to reflect on your interests, strengths, and goals. Consider seeking guidance from a career coach or mentor, exploring new opportunities for growth and development, and being proactive in advocating for your career advancement within your organization or industry.
+      </div>
+    </div>
+    <div class="faq-question">
+      <button class="faq-toggle">How can I balance career advancement with personal priorities?</button>
+      <div class="faq-answer">
+        Balancing career advancement with personal priorities requires setting clear priorities, establishing boundaries, and practicing effective time management.
+      </div>
+    </div>
+    <!-- Add more FAQ questions here -->
+  </div>
+  <footer id="footer-distributed">
+
+    <div class="footer-right">
+
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-solid fa-envelope"></i></a>
+
+    </div>
+
+    <div class="footer-left">
+
+      <p class="footer-links">
+        <a class="link-1" href="#home">Home</a>
+
+        <a href="#team-sec">Our Team</a>
+
+        <a href="#blog">Blogs</a>
+
+        <a href="#parent-content">About Us</a>
+
+        <a href="#faq">FaQ</a>
+
+
+      </p>
+
+      <p>Métier Horizon &copy; 2024</p>
+    </div>
+
+  </footer>
+  <script src="/main.js"></script>
 </body>
+
 </html>
